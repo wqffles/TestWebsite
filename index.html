@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Art Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #fff8f0;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(to right, #ffe5b4, #ffd699);
+      padding: 1.5rem;
+      text-align: center;
+      color: #6b3e26;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    main {
+      padding: 2rem;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+
+    .art-item {
+      background: #fff1e0;
+      border: 1px solid #fcd5a0;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .art-item img {
+      width: 100%;
+      display: block;
+    }
+
+    .price {
+      background-color: #ffe8cc;
+      padding: 0.5rem;
+      font-weight: bold;
+      color: #aa5a2a;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #fff0dc;
+      color: #aa5a2a;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Art Portfolio</h1>
+    <p>Original Works & Pricing</p>
+  </header>
+
+  <main>
+    <section class="gallery">
+      <div class="art-item">
+        <img src="art1.jpg" alt="Artwork 1" />
+        <div class="price">$50</div>
+      </div>
+      <div class="art-item">
+        <img src="art2.jpg" alt="Artwork 2" />
+        <div class="price">$75</div>
+      </div>
+      <div class="art-item">
+        <img src="art3.jpg" alt="Artwork 3" />
+        <div class="price">$100</div>
+      </div>
+      <!-- Add more art items as needed -->
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 My Art | All rights reserved
+  </footer>
+</body>
+</html>
